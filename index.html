@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link href="css/estilos.css" rel="stylesheet">
     <title> Catalina Alberici </title>
 </head>
-<body>
-    <div>
-        <nav >
-            <ul class="flex-basis: 0px p-2">
-                <li> <a href="index.html"> HOME </a> </li>
-                <li> <a href="about.html"> ABOUT </a> </li>
-                <li> <a href="obras.html"> OBRAS </a> </li>
-                <li> <a href="dirdearte.html"> DIR DE ARTE </a> </li>
+<body class="h-screen flex flex-col items-center justify-center relative overscroll-auto">
+    <!-- Este contenedor mantiene los elementos posicionados absolutamente -->
+    <div class="absolute inset-0 pointer-events-none">
+        <nav class="relative flex items-center justify-center h-full text-2xl font-semibold ">
+            <ul>
+                <li class="absolute top-40 -translate-x-1/2 left-1/2"> 
+                    <a href="index.html"> [HOME] </a> 
+                </li>
+                <li class="absolute bottom-40 -translate-x-1/2 left-1/2 m-2 p-10"> 
+                    <a href="about.html"> [ABOUT] </a> 
+                </li>
+                <li class="absolute right-10 top-1/2 -translate-y-1/2"> 
+                    <a href="obras.html"> [OBRAS] </a> 
+                </li>
+                <li class="absolute left-10 top-1/2 -translate-y-1/2 "> 
+                    <a href="dirdearte.html"> [DIR DE ARTE] </a> 
+                </li>
             </ul>
         </nav>
     </div>
-    
+    <!-- Contenido principal en flujo normal -->
+    <main class="text-2xl font-semibold text-center mt-auto">
+        <p class="text-lg p-2"> SCROLL DOWN ↓ </p>
+    </main>
+    <section class="flex justify-center text-2xl font-semibold ">
+        <ul>
+            <li> <a href="mailto:catalinaalberici@gmail.com" target="_blank"> MAIL </a> </li>
+            <li> <a href="https://www.instagram.com/catalinalberici/" target="_blank"> INSTAGRAM </a> </li>
+            <li> <a href="https://www.behance.net/catalinalberic"> BEHANCE </a> </li>
+            <li> <a href="https://www.upwork.com/freelancers/~01d30ef04c9b0829cd"> UPWORK </a> </li>
+        </ul>
+    </section>
 </body>
 </html>
