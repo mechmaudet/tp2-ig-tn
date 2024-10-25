@@ -1,5 +1,6 @@
 body {
     background-color: rgb(251, 250, 247);
+    background-image: url(../imgs/fondo.png);
 }
 
 nav, main p{
