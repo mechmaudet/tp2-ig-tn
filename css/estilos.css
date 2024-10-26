@@ -1,8 +1,35 @@
-body {
-    background-color: rgb(251, 250, 247);
-    background-image: url(../imgs/fondo.png);
+body{
+    cursor: url(../imgs/cursor.png), auto;
+} 
+
+a, button{
+    cursor: url(../imgs/cursor2.png), auto;
+
 }
 
-nav, main p{
-    color: rgb(23 , 75, 139);
+#home {
+    background-image: url(../imgs/fondo.png);
+    background-repeat: no-repeat;
 }
+
+nav, p, footer{
+    color: rgb(23, 75, 139);
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2{
+    color: rgb(255, 80, 177);
+}
+
+/* Carrusel */
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+    }
+    .swiper-pagination-bullet {
+    background: #fff1ee;
+    }

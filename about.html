@@ -4,10 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet"/>
+    <!-- Carrusel de imagenes -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="css/estilos.css" rel="stylesheet">
     <title> Catalina Alberici - about </title>
 </head>
 <body>
-    
+    <nav class="text-xl font-semibold p-5">
+        <ul class="grid grid-cols-3 items-center">
+            <!-- Enlaces a la izquierda -->
+            <div class="flex flex-row">
+                <li class="p-5">
+                    <a href="index.html"> HOME </a>
+                </li>
+                <li class="p-5">
+                    <a href="about.html"> ABOUT </a>
+                </li>
+            </div>
+
+            <!-- Logo centrado -->
+            <li class="flex justify-center">
+                <img src="imgs/logo.png" alt="Logo" class="h-16">
+            </li>
+
+            <!-- Enlaces a la derecha -->
+            <div class="flex flex-row justify-end">
+                <li class="p-5">
+                    <a href="obras.html"> OBRAS </a>
+                </li>
+                <li class="p-5">
+                    <a href="dirdearte.html"> DIR DE ARTE </a>
+                </li>
+            </div>
+        </ul>
+    </nav> 
+    <div class="max-w-7xl mx-auto flex p-5 gap-5">
+        <!-- Imagen alineada a la izquierda -->
+        <aside class="flex-shrink-0">
+            <img src="imgs/cata.JPG" class="w-64 rounded-lg shadow-md">
+        </aside>
+
+        <!-- Contenido principal alineado a la derecha de la imagen -->
+        <main class="text-justify">
+            <p class="text-lg p-2">
+                Soy Catalina Alberici, directora de arte, realizadora y artista plástica nacida en Santa Fe, Argentina. Desde joven desarrollé mi pasión por la pintura, comercializando obras y realizando retratos por encargo.
+            </p>
+            <p class="text-lg p-2">
+                En 2019 me mudé a Buenos Aires para estudiar Licenciatura en Escenografía en la Universidad Nacional de las Artes. A partir de 2023 comencé a trabajar en producciones audiovisuales como asistente y directora de arte, combinando mi amor por la creación plástica y la narrativa visual.
+            </p>
+            <p class="text-lg p-2">
+                Formo parte del taller de Ana Clara Soler y del Kiki Taller con Mayra Luna, participando en exposiciones y especializándome en cerámica. Mi enfoque busca integrar disciplinas para crear experiencias visuales únicas.
+            </p>
+        </main>
+    </div>
+        <h1 class="text-2xl p-10 font-semibold"> Exposiciones </h1>
+    <!-- Carrusel -->
+  <div class="max-w-7xl relative left-20 m-5">
+    <div class="swiper default-carousel swiper-container">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+         <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-fnts-vi-13.jpg"> </span>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+         <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-fnts-vi-14.jpg"> </span>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+         <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-kinkykiut-15.jpg"> </span>
+       </div>
+     </div>
+     <div class="swiper-slide">
+        <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+          <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-fnts-iv-16.jpg"> </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center gap-8 lg:justify-start justify-center">
+     <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-indigo-600 " data-carousel-prev>
+       <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+       </svg>
+     </button>
+     <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8  !right-5 hover:bg-indigo-600" data-carousel-next>
+       <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+       </svg>
+     </button>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+    <footer>
+    <div class=" bg-red-100 p-10 text-lg flex flex-row ">
+        <h2 class="font-extrabold text-3xl p-3"> Contactame! </h2>
+        <ul class="font-normal flex flex-row justify-end">
+            <li class="p-3"><button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="mailto:catalinaalberici@gmail.com" target="_blank">  MAIL </a> </span>
+                </button> </li>
+            <li class="p-3"> <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="https://www.instagram.com/catalinalberici/" target="_blank"> INSTAGRAM </a> </li> </span>
+            <li class="p-3"> <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="https://www.behance.net/catalinalberic" target="_blank"> BEHANCE </a> </li> </span>
+            <li class="p-3"> <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="https://www.upwork.com/freelancers/~01d30ef04c9b0829cd" target="_blank"> UPWORK </a> </li> </span>
+        </ul>
+    </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+<script src="js/archivo.js"></script>
 </body>
 </html>

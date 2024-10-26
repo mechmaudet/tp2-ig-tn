@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet"/>
     <link href="css/estilos.css" rel="stylesheet">
     <title> Catalina Alberici </title>
 </head>
-<body class="h-screen flex items-center justify-center relative bg-center">
+<body class="h-screen flex items-center justify-center relative bg-center" id="home">
     <!-- Este contenedor mantiene los elementos posicionados absolutamente -->
     <div class="absolute inset-0">
-        <nav class="relative flex items-center justify-center h-full text-2xl font-semibold ">
+        <nav class="relative flex items-center justify-center h-full font-bold ">
             <ul>
-                <li class="absolute top-40 -translate-x-1/2 left-1/2"> 
-                    <a href="index.html"> [HOME] </a> 
+                <li class="absolute top-40 -translate-x-1/2 left-1/2 text-3xl"> 
+                    <a href="index.html"> HOME </a> 
                 </li>
-                <li class="absolute bottom-40 -translate-x-1/2 left-1/2"> 
-                    <a href="about.html"> [ABOUT] </a> 
+                <li class="absolute bottom-40 -translate-x-1/2 left-1/2 text-3xl"> 
+                    <a href="about.html"> ABOUT </a> 
                 </li>
-                <li class="absolute right-10 top-1/2 -translate-y-1/2"> 
-                    <a href="obras.html"> [OBRAS] </a> 
+                <li class="absolute -translate-x-1/2 -translate-y-1/2"> <img class="max-w-full h-auto" src="imgs/fondo-cata2.png"> </li>
+                <li class="absolute right-10 top-1/2 -translate-y-1/2 text-2xl "> 
+                    <a href="obras.html"> OBRAS </a> 
                 </li>
-                <li class="absolute left-10 top-1/2 -translate-y-1/2 "> 
-                    <a href="dirdearte.html"> [DIR DE ARTE] </a> 
+                <li class="absolute left-10 top-1/2 -translate-y-1/2 text-2xl  "> 
+                    <a href="dirdearte.html"> DIR DE ARTE </a> 
                 </li>
             </ul>
         </nav>
     </div>
-    <!-- Contenido principal en flujo normal -->
-    <section class="text-xl font-semibold text-center mt-auto">
-        <a class="p-2" href="contacto.html"> CONTACTO </a>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
 </body>
 </html>
