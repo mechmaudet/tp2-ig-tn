@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet"/>
-    <!-- Carrusel de imagenes -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="css/estilos.css" rel="stylesheet">
     <title> Catalina Alberici - about </title>
 </head>
@@ -59,50 +56,69 @@
             </p>
         </main>
     </div>
-        <h1 class="text-2xl p-10 font-semibold"> Exposiciones </h1>
-    <!-- Carrusel -->
-  <div class="max-w-7xl relative left-20 m-5">
-    <div class="swiper default-carousel swiper-container">
-    <div class="swiper-wrapper">
-     <div class="swiper-slide">
-       <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-         <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-fnts-vi-13.jpg"> </span>
-       </div>
-     </div>
-     <div class="swiper-slide">
-       <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-         <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-fnts-vi-14.jpg"> </span>
-       </div>
-     </div>
-     <div class="swiper-slide">
-       <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-         <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-kinkykiut-15.jpg"> </span>
-       </div>
-     </div>
-     <div class="swiper-slide">
-        <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-          <span class="text-3xl font-semibold text-indigo-600"> <img src="imgs/exposiciones/exposicion-fnts-iv-16.jpg"> </span>
-        </div>
+
+    <div id="gallery" class="relative w-auto h-auto p-10 bg-blue-900" data-carousel="slide">
+      <h1 class="font-extrabold text-3xl mx-2 pb-10"> Exposiciones </h1>
+      <!-- Carousel wrapper -->
+      <div class="relative overflow-hidden rounded-lg md:h-96">
+           <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="imgs/exposiciones/exposicion1.jpg" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+              <img src="imgs/exposiciones/exposicion2.jpg" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="imgs/exposiciones/exposicion3.jpg" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="imgs/exposiciones/exposicion4.jpg" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
       </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-20 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-red-100 group-hover:bg-red-300 dark:group-hover:bg-red-300 ">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only"> Anterior </span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-20 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-red-100 group-hover:bg-red-300 dark:group-hover:bg-red-300">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only"> Siguiente </span>
+          </span>
+      </button>
+  </div>
+  <section class="">
+    <h1 class="font-extrabold text-3xl p-5 mx-2 pt-10 pl-10"> Contacto </h1>
+    <div class="lg:py-16 mx-auto max-w-screen-md">
+        <form action="#" class="space-y-8">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Mail </label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="nombre@mail.com" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Asunto </label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Contame en que te puedo ayudar!" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"> Tu mensaje </label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Dejame tu mensaje acá..." required></textarea>
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-red-100 sm:w-fit hover:bg-red-300 dark:bg-red-100 dark:hover:bg-red-300 "> Enviar </button>
+        </form>
     </div>
-    <div class="flex items-center gap-8 lg:justify-start justify-center">
-     <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-indigo-600 " data-carousel-prev>
-       <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-         <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-       </svg>
-     </button>
-     <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8  !right-5 hover:bg-indigo-600" data-carousel-next>
-       <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-         <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-       </svg>
-     </button>
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-    </div>
+  </section>
     <footer>
     <div class=" bg-red-100 p-10 text-lg flex flex-row ">
-        <h2 class="font-extrabold text-3xl p-3"> Contactame! </h2>
+        <h2 class="font-extrabold text-3xl p-3"> Encontrame en </h2>
         <ul class="font-normal flex flex-row justify-end">
             <li class="p-3"><button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
                 <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
@@ -120,7 +136,7 @@
         </ul>
     </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="js/archivo.js"></script>
 </body>
 </html>
