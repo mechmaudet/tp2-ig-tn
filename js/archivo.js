@@ -5,4 +5,4 @@ btnHome.addEventListener("hover", () => btnHome.style.cursor = "url(../imgs/curs
 btnHome.addEventListener("click", () => window.location.href = "index.html");
 
 btnHome2.addEventListener("hover", () => btnHome2.style.cursor = "url(../imgs/cursor2.png), auto");
-btnHome2.addEventListener("click", () => window.location.href = "../index.html");
+btnHome2.addEventListener("click", () => window.location.href = "index.html");
