@@ -10,9 +10,9 @@
 </head>
 <body>
     <nav class="text-xl font-semibold p-5">
-        <ul class="grid grid-cols-3 items-center">
+        <ul class="flex flex-col md:grid md:grid-cols-3 items-center">
             <!-- Enlaces a la izquierda -->
-            <div class="flex flex-row">
+            <div class="flex flex-row md:col-start-1">
                 <li class="p-5">
                     <a href="about.html"> ABOUT </a>
                 </li>
@@ -20,14 +20,14 @@
                     <a href="cv.html"> CV </a>
                 </li>
             </div>
-
+    
             <!-- Logo centrado -->
-            <li class="flex justify-center">
-                <img src="imgs/logo2.png" alt="Logo" class="h-16" id="home">
+            <li class="flex justify-center md:col-start-2">
+                <img src="imgs/logo2.png" alt="Logo" class="h-20" id="home">
             </li>
-
+    
             <!-- Enlaces a la derecha -->
-            <div class="flex flex-row justify-end">
+            <div class="flex flex-row justify-end md:col-start-3">
                 <li class="p-5">
                     <a href="obras.html"> OBRAS </a>
                 </li>
@@ -36,44 +36,55 @@
                 </li>
             </div>
         </ul>
-    </nav> 
-    <main>
-        <div class="flex flex-row">
-        <div class="relative w-full max-w-sm mx-auto h-auto p-5">
-            <img src="imgs/obras/acrilico.png" alt="acrilico sobre lienzo" class="w-full max-w-sm mx-auto h-full relative z-0">
-            <a href="obras/acrilico.html" class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-0 text-red-300 text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> Acrílico </a>
-        </div>
-        <div class="relative w-full max-w-sm mx-auto h-full p-5">
-            <img src="imgs/obras/digital.jpg" alt="obras digital" class="w-full max-w-sm mx-auto h-auto relative z-0">
-            <a href="obras/digital.html" class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-0 text-violet-700 text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> Digital </a>
-        </div>
-        <div class="relative w-full max-w-sm mx-auto h-auto p-5">
-            <img src="imgs/obras/ceramica2.png" alt="ceramica" class="w-full max-w-sm mx-auto h-auto relative z-0">
-            <a href="obras/ceramica.html" class=" absolute inset-0 flex items-center justify-center bg-white bg-opacity-0 text-orange-400 text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> Céramica </a>
-        </div>
+    </nav>   
+    <main class="p-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div class="relative w-full h-auto">
+                <img src="imgs/obras/acrilico.png" alt="acrilico sobre lienzo" class="w-full h-full object-cover">
+                <a href="obras/index.html" class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-0 text-red-300 text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> Acrílico </a>
+            </div>
+            <div class="relative w-full h-auto">
+                <img src="imgs/obras/digital.png" alt="obras digital" class="w-full h-full object-cover">
+                <a href="obras/digital.html" class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-0 text-violet-700 text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> Digital </a>
+            </div>
+            <div class="relative w-full h-auto">
+                <img src="imgs/obras/ceramica2.png" alt="ceramica" class="w-full h-full object-cover">
+                <a href="obras/ceramica.html" class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-0 text-orange-400 text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> Céramica </a>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="bg-red-100 p-10 text-lg flex flex-row">
-            <h2 class="font-extrabold text-3xl p-3"> Encontrame en </h2>
-            <ul class="flex flex-row justify-end">
-                <li class="p-3"><button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="mailto:catalinaalberici@gmail.com" target="_blank">  MAIL </a> </span>
-                    </button> </li>
-                <li class="p-3"> <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="https://www.instagram.com/catalinalberici/" target="_blank"> INSTAGRAM </a> </li> </span>
-                <li class="p-3"> <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="https://www.behance.net/catalinalberic" target="_blank"> BEHANCE </a> </li> </span>
-                <li class="p-3"> <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"> <a href="https://www.upwork.com/freelancers/~01d30ef04c9b0829cd" target="_blank"> UPWORK </a> </li> </span>
+        <div class="bg-red-100 p-10 text-lg flex flex-col md:flex-row md:items-center md:justify-between">
+            <h2 class="font-extrabold text-3xl p-3 text-center md:text-left">Encontrame en</h2>
+            <ul class="font-normal flex flex-col md:flex-row md:justify-end">
+                <li class="p-3">
+                    <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                        <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="mailto:catalinaalberici@gmail.com" target="_blank">MAIL</a></span>
+                    </button>
+                </li>
+                <li class="p-3">
+                    <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                        <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.instagram.com/catalinalberici/" target="_blank">INSTAGRAM</a></span>
+                    </button>
+                </li>
+                <li class="p-3">
+                    <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                        <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.behance.net/catalinalberic" target="_blank">BEHANCE</a></span>
+                    </button>
+                </li>
+                <li class="p-3">
+                    <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                        <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.upwork.com/freelancers/~01d30ef04c9b0829cd" target="_blank">UPWORK</a></span>
+                    </button>
+                </li>
             </ul>
         </div>
-        </footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
-    <script src="js/archivo.js"></script>
+    <script src="js/redireccion1.js"></script>
 </body>
 </html>

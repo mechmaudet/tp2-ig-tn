@@ -2,12 +2,12 @@ body{
     cursor: url(../imgs/cursor.png), auto;
 } 
 
-a, button{
+a, button, #home, #boton{
     cursor: url(../imgs/cursor2.png), auto;
 
 }
 
-#home {
+#index {
     background-image: url(../imgs/fondo2.png);
     background-repeat: no-repeat;
 }
