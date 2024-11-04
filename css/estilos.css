@@ -33,3 +33,7 @@ h1, h2{
     .swiper-pagination-bullet {
     background: #fff1ee;
     }
+
+    .sweet-warning{
+        background-color: lightpink;
+       }

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
     <title> Catalina Alberici - about </title>
@@ -20,12 +19,10 @@
                     <a href="cv.html"> CV </a>
                 </li>
             </div>
-    
             <!-- Logo centrado -->
             <li class="flex justify-center md:col-start-2">
-                <img src="imgs/logo2.png" alt="Logo" class="h-20" id="home">
+                <a href="index.html"> <img src="imgs/logo2.png" alt="Logo" class="h-20" id="home"> </a>
             </li>
-    
             <!-- Enlaces a la derecha -->
             <div class="flex flex-row justify-end md:col-start-3">
                 <li class="p-5">
@@ -42,7 +39,6 @@
         <aside class="flex-shrink-0">
             <img src="imgs/cata.JPG" class="w-full md:w-64 rounded-lg shadow-md">
         </aside>
-
         <!-- Contenido principal alineado a la derecha de la imagen -->
         <main class="text-justify space-y-4">
             <p class="text-lg p-2">
@@ -61,36 +57,36 @@
     </div>
     <div id="gallery" class="relative w-auto h-auto p-10 bg-blue-900" data-carousel="slide">
         <h1 class="font-extrabold text-3xl mx-2 pb-10"> Exposiciones </h1>
-        <!-- Carousel wrapper -->
-        <div class="relative overflow-hidden rounded-lg md:h-96">
-              <!-- Img 1 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="imgs/exposiciones/exposicion5.png" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="Exposicion en Local Support">
-              </div>  
+        <!-- Carusel  -->
+        <div class="relative overflow-hidden rounded-lg h-64 sm:h-80 md:h-96 lg:h-[500px]">
+            <!-- Img 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="imgs/exposiciones/exposicion5.png" class="block w-full h-full object-cover" alt="Exposicion en Local Support">
+            </div>  
              <!-- Img 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/exposiciones/exposicion1.png" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="">
+                <img src="imgs/exposiciones/exposicion1.png" class="block w-full h-full object-cover" alt="">
             </div>
             <!-- Img 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="imgs/exposiciones/exposicion2.png" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="Exposicion Estudio Fantasma IV">
+                <img src="imgs/exposiciones/exposicion2.png" class="block w-full h-full object-cover" alt="Exposicion Estudio Fantasma IV">
             </div>
             <!-- Img 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/exposiciones/exposicion3.png" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="Exposicion Estudio Fantasma V">
+                <img src="imgs/exposiciones/exposicion3.png" class="block w-full h-full object-cover" alt="Exposicion Estudio Fantasma V">
             </div>
             <!-- Img 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/exposiciones/exposicion4.png" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="Exposicion Kinky Kiut">
+                <img src="imgs/exposiciones/exposicion4.png" class="block w-full h-full object-cover" alt="Exposicion Kinky Kiut">
             </div>
-          <!-- Img 6 -->
+            <!-- Img 6 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/exposiciones/exposicion6.png" class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="Exposicion Sach #10">
+                <img src="imgs/exposiciones/exposicion6.png" class="block w-full h-full object-cover" alt="Exposicion Sach #10">
             </div>
         </div>
-        <!-- Slider controls -->
+        <!-- Botones de carusel -->
         <button type="button" class="absolute top-0 start-20 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-red-100 group-hover:bg-red-300 dark:group-hover:bg-red-300 ">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-red-100 group-hover:bg-red-300 dark:group-hover:bg-red-300">
                 <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                 </svg>
@@ -106,66 +102,68 @@
             </span>
         </button>
     </div>
-
 <!-- Formulario de Contacto -->
-<section class="py-10 px-5 max-w-screen-sm mx-auto">
-    <h1 class="font-extrabold text-3xl mb-5">Contacto</h1>
-    <form class="space-y-6">
-        <div>
-            <label for="email" class="block text-sm font-medium text-gray-900 p-3">Mail</label>
-            <input type="email" id="email" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="nombre@mail.com" required>
+    <section class="py-10 px-5 max-w-screen-sm mx-auto">
+        <h1 class="font-extrabold text-3xl mb-5">Contacto</h1>
+            <form class="space-y-6">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-900 p-3">Mail</label>
+                    <input type="email" id="email" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="nombre@mail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-900 p-3">Asunto</label>
+                    <input type="text" id="subject" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Contame en que te puedo ayudar!" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-900 p-3">Tu mensaje</label>
+                    <textarea id="message" rows="4" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Dejame tu mensaje acá..." required></textarea>
+                </div>
+                <button type="submit" class="w-full p-3 text-center font-medium text-white bg-red-300 rounded-lg hover:bg-blue-900" id="mensaje"> Enviar </button>
+            </form>
+    </section>
+    <footer>
+        <div class="bg-red-100 p-10 text-lg flex flex-col md:flex-row md:items-center md:justify-between">
+            <!-- Información Cata -->
+            <h2 class="font-extrabold text-3xl p-3 text-center md:text-left">Encontrame en</h2>
+                <ul class="font-normal flex flex-col md:flex-row md:justify-end">
+                    <li class="p-3">
+                    <!-- Botón con animación MAIL -->
+                        <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                            <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="mailto:catalinaalberici@gmail.com" target="_blank">MAIL</a></span>
+                        </button>
+                    </li>
+                    <li class="p-3">
+                    <!-- Botón con animación IG -->
+                        <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                            <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.instagram.com/catalinalberici/" target="_blank">INSTAGRAM</a></span>
+                        </button>
+                    </li>
+                    <li class="p-3">
+                    <!-- Botón con animación BEHANCE -->
+                        <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                        <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.behance.net/catalinalberic" target="_blank">BEHANCE</a></span>
+                        </button>
+                    </li>
+                    <li class="p-3">
+                    <!-- Botón con animación UPWORK -->
+                        <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
+                        <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.upwork.com/freelancers/~01d30ef04c9b0829cd" target="_blank">UPWORK</a></span>
+                        </button>
+                    </li>
+                </ul>
         </div>
-        <div>
-            <label for="subject" class="block text-sm font-medium text-gray-900 p-3">Asunto</label>
-            <input type="text" id="subject" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Contame en que te puedo ayudar!" required>
+        <!-- Info alumno -->
+        <div class="bg-red-100 pt-3 pb-5 text-lg flex flex-row justify-center">
+            <h2 class="font-bold pl-10">Diseño de página:</h2>
+            <a href="alumno.html" class="pl-5 ">Mercedes Maudet</a>
         </div>
-        <div>
-            <label for="message" class="block text-sm font-medium text-gray-900 p-3">Tu mensaje</label>
-            <textarea id="message" rows="4" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Dejame tu mensaje acá..." required></textarea>
-        </div>
-        <button type="submit" class="w-full p-3 text-center font-medium text-white bg-red-300 rounded-lg hover:bg-blue-900">
-            Enviar
-        </button>
-    </form>
-</section>
-<footer>
-    <div class="bg-red-100 p-10 text-lg flex flex-col md:flex-row md:items-center md:justify-between">
-        <h2 class="font-extrabold text-3xl p-3 text-center md:text-left">Encontrame en</h2>
-        <ul class="font-normal flex flex-col md:flex-row md:justify-end">
-            <li class="p-3">
-                <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="mailto:catalinaalberici@gmail.com" target="_blank">MAIL</a></span>
-                </button>
-            </li>
-            <li class="p-3">
-                <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.instagram.com/catalinalberici/" target="_blank">INSTAGRAM</a></span>
-                </button>
-            </li>
-            <li class="p-3">
-                <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.behance.net/catalinalberic" target="_blank">BEHANCE</a></span>
-                </button>
-            </li>
-            <li class="p-3">
-                <button class="btn relative inline-flex items-center overflow-hidden font-semibold transition-all bg-red-100 rounded hover:bg-white group py-1.5 px-2.5">
-                    <span class="w-56 h-48 rounded bg-blue-900 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span class="relative w-full text-left text-blue-800 transition-colors duration-300 ease-in-out group-hover:text-red-100"><a href="https://www.upwork.com/freelancers/~01d30ef04c9b0829cd" target="_blank">UPWORK</a></span>
-                </button>
-            </li>
-        </ul>
-    </div>
-        </div>
-            <div class="bg-red-100 pt-3 pb-5 text-lg flex flex-row justify-center">
-                <h2 class="font-bold pl-10">Diseño de página:</h2>
-                <a href="alumno.html" class="pl-5 ">Mercedes Maudet</a>
-            </div>
-</footer>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="js/contacto.js"></script>
-<script src="js/redireccion1.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
