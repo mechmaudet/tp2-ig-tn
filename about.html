@@ -105,7 +105,7 @@
 <!-- Formulario de Contacto -->
     <section class="py-10 px-5 max-w-screen-sm mx-auto">
         <h1 class="font-extrabold text-3xl mb-5">Contacto</h1>
-            <form class="space-y-6">
+            <form class="space-y-6" id="form">
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-900 p-3">Mail</label>
                     <input type="email" id="email" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="nombre@mail.com" required>
@@ -116,7 +116,7 @@
                 </div>
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-900 p-3">Tu mensaje</label>
-                    <textarea id="message" rows="4" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Dejame tu mensaje acá..." required></textarea>
+                    <textarea id="message" rows="4" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Dejame tu mensaje acá..." required max="500"></textarea>
                 </div>
                 <button type="submit" class="w-full p-3 text-center font-medium text-white bg-red-300 rounded-lg hover:bg-blue-900" id="mensaje"> Enviar </button>
             </form>
@@ -159,11 +159,13 @@
         <!-- Info alumno -->
         <div class="bg-red-100 pt-3 pb-5 text-lg flex flex-row justify-center">
             <h2 class="font-bold pl-10">Diseño de página:</h2>
-            <a href="alumno.html" class="pl-5 ">Mercedes Maudet</a>
+            <a href="alumno.html" class="pl-5">Mercedes Maudet</a>
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="js/contacto.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/confirmacion.js"></script>
 </body>
 </html>
